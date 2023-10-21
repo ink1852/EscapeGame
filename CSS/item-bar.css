@@ -1,0 +1,25 @@
+.item-bar{
+    position: relative;
+    top: 50px;
+    width: 800px;
+    height: 90px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+}
+.item-bar__title{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 12.5px 0px 0px 12.5px;
+    border: 3px solid rgb(210, 210, 210);
+    padding: 10px;
+    border-radius: 5px;
+}
+.imgItem-sizing{
+    position: absolute;
+    top: 8px;
+    left:150px;
+    width: 75px;
+    height: 75px;
+}

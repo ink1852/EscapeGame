@@ -1,0 +1,11 @@
+.input{
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    font-size: 25px;
+}
+.h3{
+    position: relative;
+    font-size: 15px;
+    bottom: 32px;
+}

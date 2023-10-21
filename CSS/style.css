@@ -1,0 +1,33 @@
+@import "Room1.css";
+@import "Room2.css";
+@import "clickDiv.css";
+@import "item-bar.css";
+@import "input&h3.css";
+
+.hidden{
+    display: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pagebtn{
+    position: relative;
+    bottom: 100px;
+    width: 30px;
+    height: 30px;
+    font-size: 45px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.leftPage{
+    left: -400px;
+}
+.rightPage{
+    left: 400px;
+    
+}
+
+
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCAPE</title>
+</head>
+<body>
+    <div class="Room1">
+        <div class="Room1__서랍장">
+            <div class="서랍장__shelf"></div>
+            <div class="서랍장__서랍">
+                <div class="서랍__door"></div>
+                <div class="서랍__door">
+                    <div class="door__key-hole">
+                        <div class="door__key-hole--구멍"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="painting">
+            <div class="painting__액자">
+                <img class="액자__그림" src= "img/imageINK.png"/>
+            </div>
+        </div>
+        <div class="Room1__clock">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="TV"></div>
+        <div class="TV__전선">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="Locked-door">
+            <div>
+                <div></div>
+            </div>    
+        </div>
+    </div>
+    <div class="Room2 hidden">
+        <div class="Room2__금고">
+            <span></span>
+            <div></div>
+        </div>
+        <div class="Room2__서랍">
+            <div>
+                <div></div>
+                <span></span>
+            </div>
+            <div>
+                <span></span>
+            </div>
+        </div>
+        <div class="Room2__sofa">
+            <div class="Room2__sofa--down">
+                <div class="Room2__sofa--up">
+                    <div class="Room2__sofa--side">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="Room2__전등">
+            <div class="전등__stick"></div>
+            <div class="전등__inner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="전등__side">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="electronic-board">
+            <div class="electronic-board__switch--color">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="electronic-board__switch">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="electronic-board__btn"></div>
+        </div>
+        <div class="Room2__TV--전선"></div>
+    </div>
+    <div class="leftPage pagebtn"><</div>
+    <div class="rightPage pagebtn hidden">></div>
+    <div class="whenYouClickDiv hidden">
+        <button class="divCloseBtn">X</button>
+        <div class="divScreen">
+            <img class="door-IMG imgBox-sizing hidden" src="img/문.png"/>
+            <img class="inkImg-IMG imgBox-sizing hidden"  src= "img/INKimage.png"/>
+            <img class="drawer-IMG imgBox-sizing hidden" src="img/drawer.png"/>
+            <img class="electronicBoard-IMG imgBox-sizing hidden" src="img/electronic board.png"/>
+            <img class="open-drawer-IMG imgBox-sizing hidden" src="img/OpenDrawer.png"/>
+            <form class="inputForm">
+                <input class="전자기판input hidden input" type="text" maxlength="5"/>
+            </form>
+            <img class="금고-IMG imgBox-sizing hidden" src="img/금고.png"/>
+            <form class="금고Form">
+                <input class="금고input hidden input" type="text" maxlength="4"/>
+            </form>
+            <p class="imgText"></p>
+            <div class="h3모음집">
+                <h3 class="전자기판__h3 h3"></h3>
+                <h3 class="금고__h3 h3"></h3>
+            </div>
+            
+        </div>
+    </div>
+    <footer class="item-bar">
+        <div class="item-bar__title">ITEM</div>
+        <img class="item__key imgItem-sizing hidden" src="img/열쇠.png"/>
+    </footer>
+    <script src="JS/code.js"></script>
+    <script src="JS/Room2.js"></script>
+</body>
+</html>
