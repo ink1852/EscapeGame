@@ -1,2 +1,2 @@
-# escapeGame
+# EscapeGame
 good works! 
