@@ -20,7 +20,7 @@ let 금고InputAnswer = "";
 
 const TVCoAnText = "TV가 켜졌다.";
 const 금고CoAnText = "금고가 열렸다.";
-const WrAn = "잘못된 비밀번호다.";
+const WrAnText = "잘못된 비밀번호다.";
 
 const item__key = document.querySelector(".item__key");
 let hasKey = 0; //열쇠를 갖고있으면 1, 없으면 0.
@@ -66,7 +66,7 @@ inputForm.addEventListener("submit", (e) => {
     else{
         전자기판input.value = "";
         전자기판__h3.style.color = "red";
-        전자기판__h3.innerText = "잘못된 비밀번호다.";
+        전자기판__h3.innerText = WrAnText;
     }    
 })
 
@@ -100,7 +100,7 @@ Room2__금고.addEventListener("click", 금고div);
     else{
         금고input.value = "";
         금고__h3.style.color = "red";
-        금고__h3.innerText = WrAn;
+        금고__h3.innerText = WrAnText;
     }   
 })
 
