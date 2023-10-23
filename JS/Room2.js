@@ -105,6 +105,11 @@ Room2__금고.addEventListener("click", 금고div);
 })
 
 
+//item
+item__key.addEventListener("click", () =>{
+    clickDiv();
+})
+
 
 
 

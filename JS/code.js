@@ -68,6 +68,8 @@ Room1_Drawers.addEventListener("click", drawerClickDiv);
 
 const divCloseBtn = document.querySelector(".divCloseBtn");
 divCloseBtn.addEventListener("click",()=>{
+    divText.innerText =""; 
+
     addHidden(divClick);
     addHidden(doorIMG);
     addHidden(inkImgIMG);
