@@ -16,10 +16,18 @@
     padding: 10px;
     border-radius: 5px;
 }
-.imgItem-sizing{
+.item__key{
     position: absolute;
     top: 8px;
     left:150px;
+}
+
+.imgItem-sizing{
     width: 75px;
     height: 75px;
+}
+.item__key-IMG{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
 }

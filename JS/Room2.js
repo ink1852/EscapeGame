@@ -23,6 +23,7 @@ const 금고CoAnText = "금고가 열렸다.";
 const WrAnText = "잘못된 비밀번호다.";
 
 const item__key = document.querySelector(".item__key");
+const item__KeyIMG = document.querySelector(".item__key-IMG");
 let hasKey = 0; //열쇠를 갖고있으면 1, 없으면 0.
 
 //전자기판
@@ -74,7 +75,7 @@ inputForm.addEventListener("submit", (e) => {
 function 금고div(){
      removeHidden(Room2__금고IMG);
      removeHidden(금고input);
-    divText.innerText = "금고다.";
+    divText.innerText = "전자 금고다.";
     if(금고InputAnswer == 금고CorrectAnswer){ 
         addHidden(금고input); 
         divText.innerText = "";
@@ -108,6 +109,8 @@ Room2__금고.addEventListener("click", 금고div);
 //item
 item__key.addEventListener("click", () =>{
     clickDiv();
+     removeHidden(item__KeyIMG);
+    divText.innerText = "열쇠를 얻었다. 서랍을 열 수 있을 것 같다.";
 })
 
 

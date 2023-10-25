@@ -53,7 +53,7 @@ lockedDoor.addEventListener("click",  doorClickDiv);
 //img
 function imgClickDiv(){
      removeHidden(inkImgIMG);
-    divText.innerText = "그림이다. 'INK'옆의 색깔들은 무언가의 힌트일 수도.";
+    divText.innerText = "그림이다. 'INK'옆의 색깔들은 조금 이상하기도 하다.";
 };
 inkImg.addEventListener("click", clickDiv);
 inkImg.addEventListener("click", imgClickDiv);
@@ -82,6 +82,6 @@ divCloseBtn.addEventListener("click",()=>{
     addHidden(Room2__금고IMG);
     addHidden(금고input);
     금고__h3.innerText = "";
-    
 
+    addHidden(item__KeyIMG);
 })
