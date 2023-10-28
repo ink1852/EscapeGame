@@ -97,6 +97,7 @@ Room2__금고.addEventListener("click", 금고div);
         금고__h3.innerText = 금고CoAnText;
         addHidden(금고input); 
          removeHidden(item__key)
+        hasKey = 1;
     }
     else{
         금고input.value = "";

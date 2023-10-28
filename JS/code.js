@@ -60,8 +60,15 @@ inkImg.addEventListener("click", imgClickDiv);
 
 //서랍장
 function drawerClickDiv(){
-     removeHidden(drawerIMG);
-    divText.innerText = "서랍은 잠겨있다. 열쇠가 필요해 보인다.";
+    if(hasKey == 1){
+         removeHidden(OpenDrawerIMG);
+        divText.innerText = "서랍이 열렸다. 안에서 찢어진 종이2를 발견했다.";
+        
+    }
+    else{
+         removeHidden(drawerIMG);
+        divText.innerText = "서랍은 잠겨있다. 열쇠가 필요해 보인다.";
+    }    
 };
 Room1_Drawers.addEventListener("click", clickDiv);
 Room1_Drawers.addEventListener("click", drawerClickDiv);
@@ -84,4 +91,5 @@ divCloseBtn.addEventListener("click",()=>{
     금고__h3.innerText = "";
 
     addHidden(item__KeyIMG);
+    addHidden(OpenDrawerIMG);
 })
