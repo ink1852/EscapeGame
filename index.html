@@ -48,6 +48,7 @@
             <div>
                 <span></span>
             </div>
+            <div></div>
         </div>
         <div class="Room2__sofa">
             <div class="Room2__sofa--down">
@@ -98,19 +99,25 @@
     <div class="whenYouClickDiv hidden">
         <button class="divCloseBtn">X</button>
         <div class="divScreen">
+           <!-- div-IMG -->
             <img class="door-IMG imgBox-sizing hidden" src="img/문.png"/>
             <img class="inkImg-IMG imgBox-sizing hidden"  src= "img/INKimage.png"/>
             <img class="drawer-IMG imgBox-sizing hidden" src="img/drawer.png"/>
-            <img class="electronicBoard-IMG imgBox-sizing hidden" src="img/electronic board.png"/>
             <img class="open-drawer-IMG imgBox-sizing hidden" src="img/OpenDrawer.png"/>
+
+            <img class="electronicBoard-IMG imgBox-sizing hidden" src="img/electronic board.png"/>
+            <img class="금고-IMG imgBox-sizing hidden" src="img/금고.png"/>
+            <img class="drawer2-IMG imgBox-sizing hidden" src="img/OpenDrawer.png"/>
+           <!-- itemIMG -->
             <img class="item__key-IMG hidden" src="img/열쇠.png"/>
-            <form class="inputForm">
+           <!-- inputForm-->
+            <form class="전자기판Form">
                 <input class="전자기판input hidden input" type="text" maxlength="5"/>
             </form>
-            <img class="금고-IMG imgBox-sizing hidden" src="img/금고.png"/>
             <form class="금고Form">
                 <input class="금고input hidden input" type="text" maxlength="4"/>
             </form>
+           <!-- img에서 나오는 글 --> 
             <p class="imgText"></p>
             <div class="h3모음집">
                 <h3 class="전자기판__h3 h3"></h3>
@@ -121,10 +128,14 @@
     </div>
     <footer class="item-bar">
         <div class="item-bar__title">ITEM</div>
-        <img class="item__key imgItem-sizing hidden" src="img/열쇠.png"/>
+        <div class="imgItem">
+            <img class="item__key imgItem-sizing hidden" src="img/열쇠.png"/>
+            <img class="item__teard-paper imgItem-sizing hidden" src="img/imageINK.png"/>
+            <img class="item__teard-paper2 imgItem-sizing hidden" src="img/INKimage.png"/>
+        </div>
     </footer>
     <script src="JS/code.js"></script>
     <script src="JS/Room2.js"></script>
-    <script src="JS/click-item.js"></script>
+    <script src="JS/item.js"></script>
 </body>
 </html>

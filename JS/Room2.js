@@ -1,12 +1,15 @@
 const electronicBoard = document.querySelector(".electronic-board");
 const electronicBoardIMG = document.querySelector(".electronicBoard-IMG");
 const 전자기판input = document.querySelector(".전자기판input");
-const inputForm = document.querySelector(".inputForm");
+const 전자기판Form = document.querySelector(".전자기판Form");
 
 const Room2__금고 = document.querySelector(".Room2__금고");
 const Room2__금고IMG = document.querySelector(".금고-IMG");
 const 금고input = document.querySelector(".금고input");
 const 금고Form = document.querySelector(".금고Form");
+
+const drawer2 = document.querySelector(".Room2__서랍");
+const drawer2_IMG = document.querySelector(".drawer2-IMG"); 
 
 const 전자기판CorrectAnswer = "01001"
 const 금고CorrectAnswer = "1234";
@@ -21,10 +24,8 @@ let 금고InputAnswer = "";
 const TVCoAnText = "TV가 켜졌다.";
 const 금고CoAnText = "금고가 열렸다.";
 const WrAnText = "잘못된 비밀번호다.";
-
-const item__key = document.querySelector(".item__key");
-const item__KeyIMG = document.querySelector(".item__key-IMG");
-let hasKey = 0; //열쇠를 갖고있으면 1, 없으면 0.
+const COLOR_GRREN = "green";
+const COLOR_RED = "red";
 
 //전자기판
 function electronicBoardDiv(){
@@ -35,7 +36,6 @@ function electronicBoardDiv(){
     if(전자기판InputAnswer == 전자기판CorrectAnswer){ 
         addHidden(전자기판input); 
         divText.innerText = "";
-        전자기판__h3.style.color = "green";
         전자기판__h3.innerText = TVCoAnText;
     }
 }
@@ -53,20 +53,20 @@ function TVpassword(){
 }
 
 //전자기판 답안 검사
-inputForm.addEventListener("submit", (e) => {
+전자기판Form.addEventListener("submit", (e) => {
     e.preventDefault();
     if(전자기판input.value == 전자기판CorrectAnswer){
         전자기판InputAnswer = 전자기판input.value; //정답("01001") 값을 전자기판inputAnswer에 저장.
         전자기판input.value = "";
         divText.innerText = "TV가 작동하는 소리가 들리며 화면이 켜진다.";
-        전자기판__h3.style.color = "green";
+        전자기판__h3.style.color = COLOR_GRREN;
         전자기판__h3.innerText = TVCoAnText;
         addHidden(전자기판input); 
         TVpassword();
     }
     else{
         전자기판input.value = "";
-        전자기판__h3.style.color = "red";
+        전자기판__h3.style.color = COLOR_RED;
         전자기판__h3.innerText = WrAnText;
     }    
 })
@@ -79,7 +79,6 @@ function 금고div(){
     if(금고InputAnswer == 금고CorrectAnswer){ 
         addHidden(금고input); 
         divText.innerText = "";
-        금고__h3.style.color = "green";
         금고__h3.innerText = 금고CoAnText;
     }
 }
@@ -93,7 +92,7 @@ Room2__금고.addEventListener("click", 금고div);
         금고InputAnswer = 금고input.value;
         금고input.value = "";
         divText.innerText = "금고 안에서 열쇠를 발견했다.";
-        금고__h3.style.color = "green";
+        금고__h3.style.color = COLOR_GRREN;
         금고__h3.innerText = 금고CoAnText;
         addHidden(금고input); 
          removeHidden(item__key)
@@ -101,18 +100,20 @@ Room2__금고.addEventListener("click", 금고div);
     }
     else{
         금고input.value = "";
-        금고__h3.style.color = "red";
+        금고__h3.style.color = COLOR_RED;
         금고__h3.innerText = WrAnText;
     }   
 })
 
+//drawer2
+function drawer2ClickDiv(){
+    removeHidden(drawer2_IMG);
+   divText.innerText = "또다른 서랍, 안에서 찢어진 종이를 얻었다.";
+};
+drawer2.addEventListener("click", clickDiv);
+drawer2.addEventListener("click",  drawer2ClickDiv);
 
-//item
-item__key.addEventListener("click", () =>{
-    clickDiv();
-     removeHidden(item__KeyIMG);
-    divText.innerText = "열쇠를 얻었다. 서랍을 열 수 있을 것 같다.";
-})
+
 
 
 

@@ -3,16 +3,16 @@
     top:70px;
     width: 50%;
     height: 400px;
-    background-color: rgb(135, 205, 235);
+    background-color: var(--bgColor);
 }
 .Room2__서랍{
     position: absolute;
     left: 10px;
     bottom: 0px;
     width: 90px;
-    height: 80px;
+    height: 70px;
     background-color:rgb(135, 80, 20);
-    border-top: 5px solid rgb(100, 60, 15);
+    border-top: 5px solid var(--brown);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,23 +23,30 @@
     align-items: center;
     margin-top: 7px;
     width: 70px;
-    height: 30px;
+    height: 35px;
     background-color:burlywood;
+}
+.Room2__서랍 div:last-child{
+    position: absolute;
+    bottom: 0;
+    height: 17px;
+    border-top: 3px solid var(--brown);
+    background-color:var(--bgColor);
 }
 .Room2__서랍 div span{
     border-radius: 5px;
     width: 20px;
     height: 5px;
-    background-color:rgb(100, 60, 15);
+    background-color:var(--brown);
 }
 .Room2__금고{
     position: absolute;
     left: 17.5px;
-    bottom: 85px;
+    bottom: 75px;
     width: 70px;
     height: 45px;
     background-color:  rgb(255,225,135);
-    border: 3px solid rgb(180, 145, 35);
+    border: 3px solid var(--lightBrown);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -47,15 +54,15 @@
 .Room2__금고 span{
     width: 20px;
     height: 10px;
-    background-color:  rgb(180, 145, 35);
+    background-color:  var(--lightBrown);
     border-radius: 5px;
 }
 .Room2__금고 div{
     margin-top: 5px;
     width: 30px;
     height: 30px;
-    background-color:  rgb(180, 145, 35);
-    border: 2px solid  rgb(145, 118, 28);
+    background-color:  var(--lightBrown);
+    border: 2px solid  rgb(145, 120, 25);
 }
 .Room2__sofa--down{
     display: flex;
@@ -75,9 +82,9 @@
     height: 80px;
     background-color: burlywood;
     border-radius: 8px;
-    border-top: 2px solid rgb(100, 60, 15);
-    border-left: 2px solid rgb(100, 60, 15);
-    border-right: 2px solid rgb(100, 60, 15);
+    border-top: 2px solid var(--brown);
+    border-left: 2px solid var(--brown);
+    border-right: 2px solid var(--brown);
     border-bottom: 15px solid rgb(135, 80, 20);
 }
 .Room2__sofa--side{
@@ -104,7 +111,7 @@
 .전등__stick{
     width: 3px;
     height: 100px;
-    background-color: rgb(100, 60, 15);
+    background-color: var(--brown);
 }
 .전등__inner{
     display: flex;
@@ -166,7 +173,6 @@
     align-items: center;
     position: relative;
     left: 75%;
-    
     width: 100px;
     height: 60px;
     border: 3px solid gray;
@@ -185,7 +191,7 @@
     border-radius: 50%;
 }
 .electronic-board__switch--color span:nth-child(1){
-    background-color: rgb(65, 195, 40);
+    background-color: rgb(65, 200, 40);
 }
 .electronic-board__switch--color span:nth-child(2){
     background-color: rgb(45, 200, 255);

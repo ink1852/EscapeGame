@@ -1,8 +1,8 @@
-@import "Room1.css";
-@import "Room2.css";
-@import "clickDiv.css";
-@import "item-bar.css";
-@import "input&h3.css";
+@import "screen/Room1.css";
+@import "screen/Room2.css";
+@import "div&item/clickDiv.css";
+@import "div&item/item-bar.css";
+@import "variable.css";
 
 .hidden{
     display: none;
@@ -27,6 +27,17 @@ body{
 .rightPage{
     left: 400px;
     
+}
+.input{
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    font-size: 25px;
+}
+.h3{
+    position: relative;
+    font-size: 15px;
+    bottom: 32px;
 }
 
 

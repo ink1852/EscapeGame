@@ -9,6 +9,7 @@ const rightBtn = document.querySelector(".rightPage");
 
 
 const divClick = document.querySelector(".whenYouClickDiv");
+
 const doorIMG = document.querySelector(".door-IMG");
 const inkImgIMG = document.querySelector(".inkImg-IMG");
 const drawerIMG = document.querySelector(".drawer-IMG");
@@ -92,4 +93,5 @@ divCloseBtn.addEventListener("click",()=>{
 
     addHidden(item__KeyIMG);
     addHidden(OpenDrawerIMG);
+    addHidden(drawer2_IMG);
 })

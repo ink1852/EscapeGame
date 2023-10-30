@@ -16,18 +16,17 @@
     padding: 10px;
     border-radius: 5px;
 }
-.item__key{
-    position: absolute;
-    top: 8px;
-    left:150px;
-}
-
-.imgItem-sizing{
-    width: 75px;
-    height: 75px;
+.imgItem{
+    margin-left: 130px;
+    margin-top: 8px;
 }
 .item__key-IMG{
     width: 200px;
     height: 200px;
     margin: 10px;
+}
+
+.imgItem-sizing{
+    width: 75px;
+    height: 75px;
 }
