@@ -8,6 +8,11 @@ const item__teardPaper2 = document.querySelector(".item__teard-paper2");
 const item__teardPaperIMG = document.querySelector(".item__teard-paper-IMG");
 const item__teardPaper2IMG = document.querySelector(".item__teard-paper2-IMG");
 
+function itemImg(item){
+    
+}
+    
+
 item__key.addEventListener("click", () =>{
     clickDiv();
      removeHidden(item__KeyIMG);
@@ -16,11 +21,13 @@ item__key.addEventListener("click", () =>{
 item__teardPaper.addEventListener("click", () =>{
     clickDiv();
      removeHidden(item__teardPaperIMG);
+    itemImg(item__teardPaperIMG);
     divText.innerText = "찢어진 종이, 알 수 없는 기호들이 쓰여있다.";
 })
 item__teardPaper2.addEventListener("click", () =>{
     clickDiv();
      removeHidden(item__teardPaper2IMG);
+    itemImg(item__teardPaper2IMG);
     divText.innerText = "찢어진 종이2, 번호들이 적혀있다.";
 })
 
