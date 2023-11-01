@@ -1,6 +1,13 @@
 const Room1 = document.querySelector(".Room1");
 const Room2 = document.querySelector(".Room2");
+
 const lockedDoor = document.querySelector(".Locked-door");
+const doorForm = document.querySelector(".door-form");
+const doorInput = document.querySelector(".doorInput");
+const door__h3 = document.querySelector(".door__h3");
+const doorCorrectAnswer = "7416";
+let doorInputAnswer = "";
+
 const Room1_Drawers = document.querySelector(".Room1__서랍장");
 const inkImg = document.querySelector(".painting__액자");
 
@@ -45,16 +52,36 @@ function clickDiv(){
 
 //lockedDoor
 function doorClickDiv(){
-     removeHidden(doorIMG);
-    divText.innerText = "이 방의 유일한 문, 도어락 형태다.";
-};
+    removeHidden(doorIMG);
+    removeHidden(doorInput);
+   divText.innerText = "이 방의 유일한 문. 알 수 없는 문자들이 쓰여있다.";
+   if(doorInputAnswer == doorCorrectAnswer){ 
+       addHidden(doorInput); 
+       divText.innerText = "";
+       door__h3.innerText = "good";
+   }
+}
 lockedDoor.addEventListener("click", clickDiv);
 lockedDoor.addEventListener("click",  doorClickDiv);
+
+//lockedDoor 답안 검사
+doorForm.addEventListener("submit", (e) => {
+   e.preventDefault();
+   if(doorInput.value == doorCorrectAnswer){  
+    location.href = "end.html";
+   }
+   else{
+       doorInput.value = "";
+       door__h3.style.color = COLOR_RED;
+       door__h3.innerText = WrAnText;
+   }   
+})
+
  
 //img
 function imgClickDiv(){
      removeHidden(inkImgIMG);
-    divText.innerText = "그림이다. 'INK'옆의 색깔들은 조금 이상하기도 하다.";
+    divText.innerText = "그림이다.";
 };
 inkImg.addEventListener("click", clickDiv);
 inkImg.addEventListener("click", imgClickDiv);
@@ -63,6 +90,7 @@ inkImg.addEventListener("click", imgClickDiv);
 function drawerClickDiv(){
     if(hasKey == 1){
          removeHidden(OpenDrawerIMG);
+         removeHidden(item__teardPaper2);
         divText.innerText = "서랍이 열렸다. 안에서 찢어진 종이2를 발견했다.";
         
     }
@@ -79,7 +107,11 @@ divCloseBtn.addEventListener("click",()=>{
     divText.innerText =""; 
 
     addHidden(divClick);
+
     addHidden(doorIMG);
+    addHidden(doorInput);
+    door__h3.innerText = "";
+
     addHidden(inkImgIMG);
     addHidden(drawerIMG);
 
@@ -91,7 +123,11 @@ divCloseBtn.addEventListener("click",()=>{
     addHidden(금고input);
     금고__h3.innerText = "";
 
+
     addHidden(item__KeyIMG);
+    addHidden(item__teardPaperIMG);
+    addHidden(item__teardPaper2IMG);
+
     addHidden(OpenDrawerIMG);
     addHidden(drawer2_IMG);
 })

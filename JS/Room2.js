@@ -27,6 +27,16 @@ const WrAnText = "잘못된 비밀번호다.";
 const COLOR_GRREN = "green";
 const COLOR_RED = "red";
 
+//비밀번호 TV에 띄우기
+function TVpassword(){
+    const TV = document.querySelector(".TV");
+    const passwordH1 = document.createElement("h1");
+    TV.append(passwordH1);
+    passwordH1.innerText = "1234";
+    passwordH1.style.color = "white";
+    passwordH1.style.fontSize = "42px";
+}
+
 //전자기판
 function electronicBoardDiv(){
      removeHidden(electronicBoardIMG);
@@ -41,16 +51,6 @@ function electronicBoardDiv(){
 }
 electronicBoard.addEventListener("click", clickDiv);
 electronicBoard.addEventListener("click",  electronicBoardDiv);
-
-
-function TVpassword(){
-    const TV = document.querySelector(".TV");
-    const passwordH1 = document.createElement("h1");
-    TV.append(passwordH1);
-    passwordH1.innerText = "1234";
-    passwordH1.style.color = "white";
-    passwordH1.style.fontSize = "42px";
-}
 
 //전자기판 답안 검사
 전자기판Form.addEventListener("submit", (e) => {
@@ -95,7 +95,7 @@ Room2__금고.addEventListener("click", 금고div);
         금고__h3.style.color = COLOR_GRREN;
         금고__h3.innerText = 금고CoAnText;
         addHidden(금고input); 
-         removeHidden(item__key)
+         removeHidden(item__key);
         hasKey = 1;
     }
     else{
@@ -105,11 +105,12 @@ Room2__금고.addEventListener("click", 금고div);
     }   
 })
 
-//drawer2
+//서랍2
 function drawer2ClickDiv(){
-    removeHidden(drawer2_IMG);
-   divText.innerText = "또다른 서랍, 안에서 찢어진 종이를 얻었다.";
-};
+     removeHidden(drawer2_IMG);
+     removeHidden(item__teardPaper);
+    divText.innerText = "또다른 서랍, 안에서 찢어진 종이를 얻었다.";
+}
 drawer2.addEventListener("click", clickDiv);
 drawer2.addEventListener("click",  drawer2ClickDiv);
 
