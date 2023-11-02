@@ -11,7 +11,7 @@ const item__teardPaper2IMG = document.querySelector(".item__teard-paper2-IMG");
 item__key.addEventListener("click", () =>{
     clickDiv();
      removeHidden(item__KeyIMG);
-    divText.innerText = "열쇠를 얻었다. 서랍을 열 수 있을 것 같다.";
+    divText.innerText = "열쇠. 서랍을 열 수 있을 것 같다.";
 })
 item__teardPaper.addEventListener("click", () =>{
     clickDiv();

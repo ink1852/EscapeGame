@@ -67,7 +67,8 @@ lockedDoor.addEventListener("click",  doorClickDiv);
 //lockedDoor 답안 검사
 doorForm.addEventListener("submit", (e) => {
    e.preventDefault();
-   if(doorInput.value == doorCorrectAnswer){  
+   if(doorInput.value == doorCorrectAnswer){ 
+    doorInput.value = ""; 
     location.href = "end.html";
    }
    else{
