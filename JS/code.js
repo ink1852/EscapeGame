@@ -111,6 +111,7 @@ divCloseBtn.addEventListener("click",()=>{
 
     addHidden(doorIMG);
     addHidden(doorInput);
+    doorInput.value = "";
     door__h3.innerText = "";
 
     addHidden(inkImgIMG);
@@ -118,10 +119,12 @@ divCloseBtn.addEventListener("click",()=>{
 
     addHidden(electronicBoardIMG);
     addHidden(전자기판input);
+    전자기판input.value = "";
     전자기판__h3.innerText = "";
 
     addHidden(Room2__금고IMG);
     addHidden(금고input);
+    금고input.value = "";
     금고__h3.innerText = "";
 
 
